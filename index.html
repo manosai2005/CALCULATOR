@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <button id="delete" class="operator" onclick="clearDisplay()">AC</button>
+                <button id="deletelast" class="operator" onclick="deleteLast()">DEL</button>
+                <button class="operator" onclick="inpChar('%')">%</button>
+                <button class="operator" onclick="inpChar('/')">/</button>
+            </div>
+            <div class="buttons">
+                <button class="number" onclick="inpChar('7')">7</button>
+                <button class="number" onclick="inpChar('8')">8</button>
+                <button class="number" onclick="inpChar('9')">9</button>
+                <button class="operator" onclick="inpChar('*')">*</button>
+            </div>
+            <div class="buttons">
+                <button class="number" onclick="inpChar('4')">4</button>
+                <button class="number" onclick="inpChar('5')">5</button>
+                <button class="number" onclick="inpChar('6')">6</button>
+                <button class="operator" onclick="inpChar('-')">-</button>
+            </div>
+            <div class="buttons">
+                <button class="number" onclick="inpChar('1')">1</button>
+                <button class="number" onclick="inpChar('2')">2</button>
+                <button class="number" onclick="inpChar('3')">3</button>
+                <button class="operator" onclick="inpChar('+')">+</button>
+            </div>
+            <div class="buttons">
+                <button id="zero" class="number" onclick="inpChar('0')">0</button>
+                <button class="number" onclick="inpChar('.')">.</button>
+                <button class="operator" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
