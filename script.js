@@ -2,7 +2,7 @@ const display = document.getElementById("display")
 
 function inpChar(input){
     const lastchar = display.value.slice(-1);
-    const operator = "-=/*%"
+    const operator = "-=+/*%"
     if(operator.includes(lastchar) && operator.includes(input)){
         return;
     }
